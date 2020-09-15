@@ -1,0 +1,12 @@
+cluster:
+  server_name: web2
+  enabled: true
+  member_config:
+  - entity: storage-pool
+    name: local
+    key: source
+    value: ""
+    description: '"source" property for storage pool "local"'
+  cluster_address: 192.168.100.13:8443
+  server_address: 192.168.100.12:8443
+  cluster_certificate: |

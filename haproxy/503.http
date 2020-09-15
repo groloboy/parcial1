@@ -1,8 +1,8 @@
-HTTP/1.0 503 Service Unavailable^M
-Cache-Control: no-cache^M
-Connection: close^M
-Content-Type: text/html^M
-^M
+HTTP/1.0 503 Service Unavailable
+Cache-Control: no-cache
+Connection: close
+Content-Type: text/html
+
 <html><body><h1>El servicio no esta disponible</h1>
 El servicio no se encuentra disponible por el momento
 </body></html>

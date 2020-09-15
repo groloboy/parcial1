@@ -1,8 +1,10 @@
 sudo snap install lxd
 newgrp lxd
-lxd init --auto
+sudo cat /vagrant/haproxy/preseed.yaml | lxd init --preseed
+sudo chmod 777 /var/snap/lxd/common/lxd/server.crt
+sudo cp -f /var/snap/lxd/common/lxd/server.crt /vagrant/haproxy/server.crt
 
-lxc launch ubuntu:20.04 haproxy
+lxc launch ubuntu:20.04 haproxy --target haproxy
 
 sudo apt-get update
 
