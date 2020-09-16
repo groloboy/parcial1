@@ -1,6 +1,6 @@
 sudo snap install lxd
 newgrp lxd
-cp /vagrant/web1/preseed.sh preseed.sh
+cp /vagrant/web2/preseed.sh preseed.sh
 source preseed.sh
 sudo cat config.yaml | lxd init --preseed
 
